@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tentang Kami</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Tentang Kami</h1>
+    <p>Selamat datang di halaman tentang kami!</p>
+    <a href="/">Kembali ke Beranda</a>
+</body>
+</html>
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="text-3xl font-bold text-gray-800">Tentang Kami</h1>
+    <p class="text-lg text-gray-600 mt-2">Kami adalah tim pengembang yang membangun website menggunakan Flask & Tailwind CSS.</p>
+{% endblock %}
